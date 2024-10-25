@@ -27,6 +27,7 @@ const webhooks = require("../controller/order/webhook");
 const orderController = require("../controller/order/order.controller");
 const allOrderController = require("../controller/order/allOrder.controller");
 
+router.get("/",)
 router.post("/signup", userSignUpController);
 router.post("/signin", userSignInController);
 router.get("/user-details", authToken, userDetailsController);
