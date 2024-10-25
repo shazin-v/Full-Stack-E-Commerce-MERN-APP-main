@@ -26,8 +26,9 @@ const paymentController = require("../controller/order/paymentController");
 const webhooks = require("../controller/order/webhook");
 const orderController = require("../controller/order/order.controller");
 const allOrderController = require("../controller/order/allOrder.controller");
+const healthCheckController = require("../controller/health");
 
-router.get("/",)
+router.get("/health",healthCheckController);
 router.post("/signup", userSignUpController);
 router.post("/signin", userSignInController);
 router.get("/user-details", authToken, userDetailsController);
